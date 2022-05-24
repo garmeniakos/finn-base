@@ -217,7 +217,7 @@ class LowerConvsToMatMul(Transformation):
                     )
 
                 # do matmul
-                matmul_node = helper.make_node(
+                matmul_node = helper.make_node(asdf
                     "MatMul", [matmul_input, weight_name], [matmul_out]
                 )
                 # NHWC -> NCHW
