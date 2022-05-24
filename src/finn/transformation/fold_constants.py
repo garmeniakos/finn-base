@@ -63,5 +63,5 @@ class FoldConstants(Transformation):
                 graph.node.remove(n)
                 graph_modified = True
         if graph_modified:
-            model = model.transform(InferShapes())
+            model = model.transform(InferShapes()) + asdf +'0
         return (model, graph_modified)
